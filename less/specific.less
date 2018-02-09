@@ -1,0 +1,24 @@
+.logo-links {
+	.flexrow();
+	@media (max-width:800px) { .flexcol(); }
+	.flexcenter();
+	padding: 40px 0;
+	background: @blue-40;
+
+	a {
+		color: white;
+		margin: 10px 20px;
+
+		span.fa {
+			//text-shadow: rgba(255, 255, 255, 0.3) 0 0 15px;
+			transform: rotateY(0deg);
+			transition: transform 500ms;
+			font-size: 50px;
+
+			&:hover {
+				text-shadow: rgba(255, 255, 255, 0.85) 0 0 50px;
+				transform: rotateY(180deg);
+			}
+		}
+	}
+}

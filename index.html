@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset='utf-8'/>
+	<title>Ecouterlapluie</title>
+	
+	<!-- Meta stuff and icons -->
+	<link rel='icon' type='image/png' href="img/website/xxx.png">
+	<!-- MS -->
+	<meta name='application-name' content="Ecouterlapluie"/>
+	<!-- i -->
+	<link rel='apple-touch-startup-image' href="img/website/xxx.png">
+	<meta name='apple-mobile-web-app-capable' content='yes'>
+	<meta name='apple-mobile-web-app-status-bar-style' content='black'>
+	<link rel='apple-touch-icon-precomposed' sizes='128x128' href="img/website/xxx.png" />
+	<!-- Droid -->
+	<meta name='mobile-web-app-capable' content='yes'>
+	<link rel='shortcut icon' sizes='270x270' href="img/website/xxx.png">
+	<link rel='shortcut icon' sizes='128x128' href="img/website/xxx.png">
+	
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,400i,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	<link rel='stylesheet' type='text/css' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	
+	<!-- Stylesheets -->
+	<link rel='stylesheet' type='text/less' href="less/main.less" />
+	
+	<!-- Only script in header: less on-the-fly compiler -->
+	<script type='text/javascript' src="node_modules/less/dist/less.min.js"></script>
+	
+</head>
+<body>
+
+<div id="listen-website">
+	<div class="header" v-bind:class="{ 'mobile-menu-open': isOpen }">
+		<div class="logo">
+			<router-link to="/" class="menu-tab home">
+				<img src='img/website/xxx.svg' alt="Ecoutay logo" />
+			</router-link>
+		</div>
+		<div class="menu" v-on:click="isOpen = false">
+			<router-link to="/wallpapers" class="menu-tab wallpapers">
+				<geom sides="4" header="true"></geom>
+				Fonds d'écran
+			</router-link>
+			<router-link to="/shop" class="menu-tab shop">
+				<geom sides="0" header="true"></geom>
+				Shop
+			</router-link>
+			<router-link to="/commissions" class="menu-tab commissions">
+				<geom sides="4" header="true" rotate="true"></geom>
+				Commissions
+			</router-link>
+			<router-link to="/gallery" class="menu-tab gallery">
+				<geom sides="0" header="true"></geom>
+				Galerie
+			</router-link>
+		</div>
+		<div class="mobile-burger" v-on:click="isOpen = !isOpen">
+			<p class="fa fa-bars" v-if="!isOpen"></p>
+			<p class="fa fa-times" v-if="isOpen"></p>
+		</div>
+	</div>
+
+	<div class="core">
+		<router-view></router-view>
+	</div>
+
+	<div class="footer">
+		<p>Ecouterlapluie @2018</p>
+		<p class="version">v0.1</p>
+	</div>
+</div>
+
+<!-- View templates -->
+<template id="home-template">
+	<div id="home">
+
+		<div class="page-content">
+			<p>Home</p>
+		</div>
+
+		<logo-links></logo-links>
+	</div>
+</template>
+
+<template id="wallpapers-template">
+	<div id="wallpapers">
+		
+		<div class="page-content">
+			<p>Fonds d'écran</p>
+		</div>
+
+		<logo-links></logo-links>
+	</div>
+</template>
+
+<template id="shop-template">
+	<div id="shop">
+
+		<div class="page-content">
+			<p>Shop</p>
+		</div>
+
+		<logo-links></logo-links>
+	</div>
+</template>
+
+<template id="commissions-template">
+	<div id="commissions">
+
+		<div class="page-content">
+			<p>Commissions</p>
+		</div>
+
+		<logo-links></logo-links>
+	</div>
+</template>
+
+<template id="gallery-template">
+	<div id="gallery">
+
+		<div class="page-content">
+			<p>Galerie</p>
+		</div>
+
+		<logo-links></logo-links>
+	</div>
+</template>
+
+<!-- Components -->
+<template id="logo-links-template">
+	<div class="logo-links">
+		<a class="deviant" title="Titre à choisir" href="#" target='_blank'>
+			<span class="fa fa-deviantart"></span>
+		</a>
+		<a class="facebook" title="Titre à choisir" href="#" target='_blank'>
+			<span class="fa fa-facebook"></span>
+		</a>
+		<a class="goo" title="Titre à choisir" href="#" target='_blank'>
+			<span class="fa fa-google-plus"></span>
+		</a>
+		<a class="instagram" title="Titre à choisir" href="#" target='_blank'>
+			<span class="fa fa-instagram"></span>
+		</a>
+		<a class="pinterest" title="Titre à choisir" href="#" target='_blank'>
+			<span class="fa fa-pinterest"></span>
+		</a>
+		<a class="snapchat" title="Titre à choisir" href="#" target='_blank'>
+			<span class="fa fa-snapchat"></span>
+		</a>
+		<a class="twitter" title="Titre à choisir" href="#" target='_blank'>
+			<span class="fa fa-twitter"></span>
+		</a>
+		<a class="youtube" title="Titre à choisir" href="#" target='_blank'>
+			<span class="fa fa-youtube"></span>
+		</a>
+	</div>
+</template>
+
+<!-- Libs -->
+<script type='text/javascript' src="node_modules/vue/dist/vue.min.js"></script>
+<!--<script type='text/javascript' src="node_modules/vue/dist/vue.js"></script>-->
+<script type='text/javascript' src="node_modules/vue-router/dist/vue-router.min.js"></script>
+<script type='text/javascript' src="node_modules/jquery/dist/jquery.min.js"></script>
+
+<!-- Ours -->
+<script type='text/javascript' src="js/main.js"></script>
+
+</body>
+</html>
