@@ -101,10 +101,13 @@
 	<div id="wallpapers">
 		
 		<div class="page-content">
-			<p>Fonds d'écran</p>
+			<h1>Fonds d'écran</h1>
 			<div class="wallpapers-container">
 				<div class="wallpaper" v-for="w in wallpapers">
-					<p>{{ w.title }}</p>
+					<img class="preview" :src="w.previewSrc" :title="w.title" />
+					<p class="title">{{ w.title }}</p>
+					<p class="description">{{ w.description }}</p>
+					<p class="price">{{ w.price }}€</p>
 				</div>
 			</div>
 		</div>

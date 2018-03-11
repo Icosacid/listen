@@ -1,0 +1,36 @@
+#wallpapers {
+	h1 {
+		.center();
+		.margin-v-20();
+	}
+	.wallpapers-container {
+		.flexrow();
+		.flexwrap();
+
+		.wallpaper {
+			margin: 15px;
+			.center();
+			width: 300px;
+
+			img.preview {
+				width: 200px;
+				border: solid 1.5px rgba(0, 0, 0, 0.3);
+				border-radius: @border-radius;
+			}
+			p {
+				color: @white;
+				.center();
+
+				&.title {
+					font-size: 1.2rem;
+				}
+				&.description {
+
+				}
+				&.price {
+					font-weight: bold;
+				}
+			}
+		}
+	}
+}

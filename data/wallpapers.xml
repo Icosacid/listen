@@ -5,15 +5,47 @@
 
 	<wallpaper>
 		<title>Ecoutay wallpaper 1</title>
-		<description>Description 1</description>
+		<description>This Ecoutay wallpaper represents a bear eating fruits</description>
 		<image>img/wallpapers/w1.png</image>
 		<preview>img/wallpapers/w1-preview.png</preview>
 		<price>50</price>
 	</wallpaper>
-	
+
 	<wallpaper>
 		<title>Ecoutay wallpaper 2</title>
-		<description>Description 2 Description 2 Description 2 Description 2</description>
+		<description>Created as a tribute to the autumn season</description>
+		<image>img/wallpapers/w2.png</image>
+		<preview>img/wallpapers/w2-preview.png</preview>
+		<price>40</price>
+	</wallpaper>
+
+	<wallpaper>
+		<title>Ecoutay wallpaper 3</title>
+		<description>This Ecoutay wallpaper represents a bear eating fruits</description>
+		<image>img/wallpapers/w1.png</image>
+		<preview>img/wallpapers/w1-preview.png</preview>
+		<price>50</price>
+	</wallpaper>
+
+	<wallpaper>
+		<title>Ecoutay wallpaper 4</title>
+		<description>Created as a tribute to the autumn season</description>
+		<image>img/wallpapers/w2.png</image>
+		<preview>img/wallpapers/w2-preview.png</preview>
+		<price>40</price>
+	</wallpaper>
+
+	<wallpaper>
+		<title>Ecoutay wallpaper 5</title>
+		<description>This Ecoutay wallpaper represents a bear eating fruits</description>
+		<image>img/wallpapers/w1.png</image>
+		<preview>img/wallpapers/w1-preview.png</preview>
+		<price>50</price>
+	</wallpaper>
+
+	<wallpaper>
+		<title>Ecoutay wallpaper 6</title>
+		<description>Created as a tribute to the autumn season</description>
 		<image>img/wallpapers/w2.png</image>
 		<preview>img/wallpapers/w2-preview.png</preview>
 		<price>40</price>
