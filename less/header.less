@@ -3,11 +3,13 @@
 	.flexcenter();
 	width: 100%;
 	position: relative;
+	height: 200px;
 
 	.logo {
 		width: 80px;
 		height: 65px;
 		position: relative;
+		display: none;
 
 		img {
 			width: 65px;
@@ -20,34 +22,30 @@
 		position: relative;
 		.flexrow();
 		.flexcenter();
-		height: 150px;
 
 		.menu-tab {
-			padding: 20px;
+			padding: 10px;
 			transition: background 500ms;
+			font-size: 1.1rem;
+			text-shadow: rgba(255, 255, 255, 0.5);
+			.uppercase();
+			font-weight: bold;
 			.pointer();
 			.flexrow();
+
 			&:hover,
 			&.router-link-exact-active {
 				& {
-					background: @blue-60;
+					background: transparent;
 				}
 			}
-
-			font-size: 1.3rem;
-			.uppercase();
-			.weight-200();
-
 			&, &:visited, &:focus {
-				color: @blue-text;
+				color: @blue-40;
 				text-decoration: none;
 			}
-
 			.geom {
 				margin-right: 10px;
 			}
-
-
 		}
 	}
 	.mobile-burger {

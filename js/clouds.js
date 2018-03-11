@@ -6,8 +6,10 @@ Cloud.init = function() {
     this.height = this.container.offsetHeight;
     this.xC = this.width / 2;
     this.yC = this.height / 2;
+    this.cloudWidth = 720;
+    this.cloudHeight = 120;
     this.stepCount = 0;
-    this.population = 200;
+    this.population = 150;
     this.particles = [];
 
     for (var i = 0; i < this.population; i++) {
@@ -42,13 +44,13 @@ Cloud.draw = function() {
     }
 };
 Cloud.birth = function() {
-    var speed = 0.2,
-        x = this.xC + 220 * (-1 + 2 * Math.random()),
-        y = this.yC + 100 * (-1 + 2 * Math.random()),
+    var speed = 0.1,
+        x = this.xC + this.cloudWidth * (-0.5 + 1 * Math.random()),
+        y = this.yC + this.cloudHeight * (-0.5 + 1 * Math.random()),
         minSize = 10,
         maxSize = 150,
         distToCenter = Math.sqrt(Math.pow(x - this.xC, 2) + Math.pow(y - this.yC, 2)),
-        size = 170 - 0.65 * distToCenter;
+        size = 150 - 0.4 * distToCenter;
 
     // Create new particle
     var particle = {
@@ -74,8 +76,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     Cloud.init();
 
-    setInterval(function() {
+    var frame = function() {
         Cloud.evolve();
-    }, 80);
+        requestAnimationFrame(frame);
+    };
 
+    frame();
 });
