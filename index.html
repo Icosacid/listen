@@ -83,14 +83,7 @@
 	<div id="home">
 
 		<div class="page-content">
-			<p>Home</p>
-			<p>Home</p>
-			<p>Home</p>
-			<p>Home</p>
-			<p>Home</p>
-			<p>Home</p>
-			<p>Home</p>
-			<p>Home</p>
+			<h1>Home</h1>
 		</div>
 
 		<logo-links></logo-links>
@@ -102,6 +95,7 @@
 		
 		<div class="page-content">
 			<h1>Fonds d'écran</h1>
+
 			<div class="wallpapers-container">
 				<div class="wallpaper" v-for="w in wallpapers">
 					<img class="preview" :src="w.previewSrc" :title="w.title" />
@@ -120,7 +114,16 @@
 	<div id="shop">
 
 		<div class="page-content">
-			<p>Shop</p>
+			<h1>Shop</h1>
+
+			<div class="articles-container">
+				<div class="article" v-for="a in articles">
+					<img class="preview" :src="a.previewSrc" :title="a.title" />
+					<p class="title">{{ a.title }}</p>
+					<p class="description">{{ a.description }}</p>
+					<p class="price">{{ a.price }}€</p>
+				</div>
+			</div>
 		</div>
 
 		<logo-links></logo-links>
@@ -131,7 +134,7 @@
 	<div id="commissions">
 
 		<div class="page-content">
-			<p>Commissions</p>
+			<h1>Commissions</h1>
 		</div>
 
 		<logo-links></logo-links>
@@ -142,7 +145,7 @@
 	<div id="gallery">
 
 		<div class="page-content">
-			<p>Galerie</p>
+			<h1>Gallerie</h1>
 		</div>
 
 		<logo-links></logo-links>
@@ -186,6 +189,7 @@
 <script type='text/javascript' src="node_modules/jquery/dist/jquery.min.js"></script>
 
 <!-- Ours -->
+<script type='text/javascript' src="js/shop.js"></script>
 <script type='text/javascript' src="js/wallpapers.js"></script>
 <script type='text/javascript' src="js/main.js"></script>
 <script type='text/javascript' src="js/clouds.js"></script>

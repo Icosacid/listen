@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<articles>
+	<!-- Personal note: be very careful with the characters &, ", ' and others that might crash the XML parsing -->
+	<!-- HTML entity for line feed: &#10; -->
+
+	<article>
+		<title>Ecoutay article 1</title>
+		<description>This Ecoutay article represents a bear eating fruits</description>
+		<image>img/articles/w1.png</image>
+		<preview>img/articles/w1-preview.png</preview>
+		<price>50</price>
+	</article>
+
+	<article>
+		<title>Ecoutay article 2</title>
+		<description>Created as a tribute to the autumn season</description>
+		<image>img/articles/w2.png</image>
+		<preview>img/articles/w2-preview.png</preview>
+		<price>40</price>
+	</article>
+
+	<article>
+		<title>Ecoutay article 3</title>
+		<description>This Ecoutay article represents a bear eating fruits</description>
+		<image>img/articles/w1.png</image>
+		<preview>img/articles/w1-preview.png</preview>
+		<price>50</price>
+	</article>
+
+	<article>
+		<title>Ecoutay article 4</title>
+		<description>Created as a tribute to the autumn season</description>
+		<image>img/articles/w2.png</image>
+		<preview>img/articles/w2-preview.png</preview>
+		<price>40</price>
+	</article>
+
+	<article>
+		<title>Ecoutay article 5</title>
+		<description>This Ecoutay article represents a bear eating fruits</description>
+		<image>img/articles/w1.png</image>
+		<preview>img/articles/w1-preview.png</preview>
+		<price>50</price>
+	</article>
+
+	<article>
+		<title>Ecoutay article 6</title>
+		<description>Created as a tribute to the autumn season</description>
+		<image>img/articles/w2.png</image>
+		<preview>img/articles/w2-preview.png</preview>
+		<price>40</price>
+	</article>
+
+</articles>

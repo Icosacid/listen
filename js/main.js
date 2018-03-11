@@ -9,12 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         methods: { },
         mounted: function() { }
     };
-    var ShopComponent = {
-        template: jQuery('#shop-template').html(),
-        data: function() {
-            return { }
-        }
-    };
     var CommissionsComponent = {
         template: jQuery('#commissions-template').html(),
         data: function() {
