@@ -1,9 +1,8 @@
 .header {
 	.flexrow();
-	.flexstart();
-	border-bottom: solid 5px @blue-40;
+	.flexcenter();
 	width: 100%;
-	background: @blue-45;
+	position: relative;
 
 	.logo {
 		width: 80px;
@@ -18,8 +17,10 @@
 		}
 	}
 	.menu {
+		position: relative;
 		.flexrow();
 		.flexcenter();
+		height: 150px;
 
 		.menu-tab {
 			padding: 20px;

@@ -34,11 +34,11 @@
 
 <div id="listen-website">
 	<div class="header" v-bind:class="{ 'mobile-menu-open': isOpen }">
-		<div class="logo">
-			<router-link to="/" class="menu-tab home">
-				<img src='img/website/xxx.svg' alt="Ecoutay logo" />
-			</router-link>
-		</div>
+
+		<!-- Clouds background container -->
+		<div class="clouds"></div>
+
+		<!-- Menu -->
 		<div class="menu" v-on:click="isOpen = false">
 			<router-link to="/wallpapers" class="menu-tab wallpapers">
 				<geom sides="4" header="true"></geom>
@@ -48,6 +48,11 @@
 				<geom sides="0" header="true"></geom>
 				Shop
 			</router-link>
+			<div class="logo">
+				<router-link to="/" class="menu-tab home">
+					<img src='img/website/xxx.svg' alt="Ecoutay logo" />
+				</router-link>
+			</div>
 			<router-link to="/commissions" class="menu-tab commissions">
 				<geom sides="4" header="true" rotate="true"></geom>
 				Commissions
@@ -167,6 +172,7 @@
 
 <!-- Ours -->
 <script type='text/javascript' src="js/main.js"></script>
+<script type='text/javascript' src="js/clouds.js"></script>
 
 </body>
 </html>
