@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<wallpapers>
+	<!-- Personal note: be very careful with the characters &, ", ' and others that might crash the XML parsing -->
+	<!-- HTML entity for line feed: &#10; -->
+
+	<wallpaper>
+		<title>Ecoutay wallpaper 1</title>
+		<description>Description 1</description>
+		<image>img/wallpapers/w1.png</image>
+		<preview>img/wallpapers/w1-preview.png</preview>
+		<price>50</price>
+	</wallpaper>
+	
+	<wallpaper>
+		<title>Ecoutay wallpaper 2</title>
+		<description>Description 2 Description 2 Description 2 Description 2</description>
+		<image>img/wallpapers/w2.png</image>
+		<preview>img/wallpapers/w2-preview.png</preview>
+		<price>40</price>
+	</wallpaper>
+
+</wallpapers>

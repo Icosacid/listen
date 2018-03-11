@@ -102,6 +102,11 @@
 		
 		<div class="page-content">
 			<p>Fonds d'écran</p>
+			<div class="wallpapers-container">
+				<div class="wallpaper" v-for="w in wallpapers">
+					<p>{{ w.title }}</p>
+				</div>
+			</div>
 		</div>
 
 		<logo-links></logo-links>

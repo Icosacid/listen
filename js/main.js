@@ -9,12 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
         methods: { },
         mounted: function() { }
     };
-    var WallpapersComponent = {
-        template: jQuery('#wallpapers-template').html(),
-        data: function() {
-            return { }
-        }
-    };
     var ShopComponent = {
         template: jQuery('#shop-template').html(),
         data: function() {
