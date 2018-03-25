@@ -36,35 +36,34 @@
 	<div class="header" v-bind:class="{ 'mobile-menu-open': isOpen }">
 
 		<!-- Clouds background container -->
-		<div class="clouds"></div>
+		<!--<div class="clouds"></div>-->
 
-		<!-- Menu -->
-		<div class="menu" v-on:click="isOpen = false">
-			<router-link to="/wallpapers" class="menu-tab wallpapers">
-				<geom sides="4" header="true"></geom>
-				Fonds d'écran
-			</router-link>
-			<router-link to="/shop" class="menu-tab shop">
-				<geom sides="0" header="true"></geom>
-				Shop
-			</router-link>
-			<div class="logo">
-				<router-link to="/" class="menu-tab home">
-					<img src='img/website/xxx.svg' alt="Ecoutay logo" />
+		<div class="cloud-menu">
+			<img class="cloud-image" src="./img/website/cloud.png" />
+			<div class="menu-layer">
+				<router-link to="/wallpapers" class="menu-tab wallpapers">
+					<geom sides="4" header="true"></geom>
+					Fonds d'écran
+				</router-link>
+				<router-link to="/shop" class="menu-tab shop">
+					<geom sides="0" header="true"></geom>
+					Shop
+				</router-link>
+				<div class="logo">
+					<router-link to="/" class="menu-tab home">
+						<img src='img/website/xxx.svg' alt="Ecoutay logo" />
+					</router-link>
+				</div>
+				<router-link to="/commissions" class="menu-tab commissions">
+					<geom sides="4" header="true" rotate="true"></geom>
+					Commissions
+				</router-link>
+				<router-link to="/gallery" class="menu-tab gallery">
+					<geom sides="0" header="true"></geom>
+					Galerie
 				</router-link>
 			</div>
-			<router-link to="/commissions" class="menu-tab commissions">
-				<geom sides="4" header="true" rotate="true"></geom>
-				Commissions
-			</router-link>
-			<router-link to="/gallery" class="menu-tab gallery">
-				<geom sides="0" header="true"></geom>
-				Galerie
-			</router-link>
-		</div>
-		<div class="mobile-burger" v-on:click="isOpen = !isOpen">
-			<p class="fa fa-bars" v-if="!isOpen"></p>
-			<p class="fa fa-times" v-if="isOpen"></p>
+
 		</div>
 	</div>
 

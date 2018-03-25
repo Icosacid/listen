@@ -11,7 +11,9 @@ html,
 body {
 	height: 100%;
 	width: 100%;
-	background-color: @grey-30;
+}
+#listen-website {
+	background: linear-gradient(@background-1, @background-2, @background-2, @background-1);
 }
 .page-header {
 	background: @blue-20;
@@ -19,10 +21,6 @@ body {
 	.flexrow();
 	.flexstart();
 	border-top: solid 5px @blue-10;
-
-	.geom {
-		margin-right: 20px;
-	}
 }
 .page-content {
 	padding: 20px;
@@ -35,14 +33,4 @@ body {
 		.center();
 		.margin-v-20();
 	}
-}
-h3.categname,
-.categname {
-	/* Yeah stupid selector but reminds me it's mainly for h3's */
-	.center();
-	padding: 10px 0;
-	background: @blue-25;
-	border-bottom: solid 5px @blue-10;
-	border-top: solid 5px @blue-10;
-	font-size: 2.1rem;
 }

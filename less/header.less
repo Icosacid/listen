@@ -3,99 +3,38 @@
 	.flexcenter();
 	width: 100%;
 	position: relative;
-	height: 200px;
 
-	.logo {
-		width: 80px;
-		height: 65px;
+	.cloud-menu {
 		position: relative;
-		display: none;
+		width: 100%;
+		height: 680px;
 
-		img {
-			width: 65px;
-			height: 65px;
+		img.cloud-image,
+		.menu-layer {
 			.marjinoto();
-			top: 10px;
 		}
-	}
-	.menu {
-		position: relative;
-		.flexrow();
-		.flexcenter();
-
-		.menu-tab {
-			padding: 10px;
-			transition: background 500ms;
-			font-size: 1.1rem;
-			text-shadow: rgba(255, 255, 255, 0.5);
-			.uppercase();
-			font-weight: bold;
-			.pointer();
+		img.cloud-image {
+			width: 1000px;
+			height: auto;
+		}
+		.menu-layer {
+			width: 1000px;
+			top: 65px;
 			.flexrow();
+			.flexcenter();
 
-			&:hover,
-			&.router-link-exact-active {
-				& {
-					background: transparent;
-				}
-			}
-			&, &:visited, &:focus {
-				color: @blue-40;
+			a.menu-tab {
+				margin: 20px;
+				font-family: "Tasty Birds Sans", sans-serif;
+				font-weight: bold;
+				font-size: 2rem;
 				text-decoration: none;
-			}
-			.geom {
-				margin-right: 10px;
-			}
-		}
-	}
-	.mobile-burger {
-		display: none;
-	}
-
-	/* Mobile menu */
-	@media (max-width: 1100px) {
-		.flexbetween();
-		.menu {
-			display: none;
-		}
-		.mobile-burger {
-			display: inherit;
-
-			p.fa {
-				font-size: 40px;
-				margin-right: 25px;
-				.pointer();
+				color: @blue-85;
 
 				&:hover {
-					color: white;
-					.white-shadow();
+					color: @blue-95;
 				}
 			}
 		}
-		&.mobile-menu-open {
-			position: relative;
-
-			.logo {
-				display: none;
-			}
-			.menu {
-				display: inherit;
-				flex-basis: 75%;
-				padding-left: 20px;
-				.flexcol();
-				.flexcenter();
-
-				.menu-tab {
-					width: 100%;
-					.flexstart();
-					padding-left: 20px;
-				}
-			}
-			.mobile-burger {
-				padding: 10px 0 20px 20px;
-				align-self: flex-start;
-			}
-		}
-
 	}
 }
